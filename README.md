@@ -16,6 +16,7 @@ A aplicação consiste em três endpoints:
 
 > Para teste, deverão ser usados os dados mockados:
 
+```
 {
   "User": {
     "name": { "string": {}},
@@ -26,7 +27,7 @@ A aplicação consiste em três endpoints:
     "price": {"int": { "min": 10, "max": 15000 } }
   }
 }
-
+```
 
 ## Licença
 
