@@ -29,6 +29,10 @@ A aplicação consiste em três endpoints:
 }
 ```
 
+- Descrição do projeto:
+
+https://forest-beechnut-57c.notion.site/Teste-API-de-or-amento-51c33eb367764d598affbd68cf0cef91
+
 ## Licença
 
 Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais informações.
