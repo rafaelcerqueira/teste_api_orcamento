@@ -2,6 +2,7 @@ import axios from "axios";
 
 const API_URL: string = 'https://mockend.com/juunegreiros/BE-test-api/products';
 
+//listar produtos
 export class ProductsController {
     async getProducts(): Promise<Array<any>> {
         try {

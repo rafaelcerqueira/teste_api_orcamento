@@ -1,10 +1,11 @@
-import { ProductsController } from './controllers/ProductsController';
 import express from 'express';
-import { UsersController } from './controllers/UsersController';
+import { ProductsController } from './controllers/ProductsController';
+import { UsersController, getUserById } from './controllers/UsersController';
+import { purchaseController } from './controllers/PurchaseController';
 
 const router = express.Router();
 const userController = new UsersController();
-const productsController = new ProductsController;
+const productsController = new ProductsController();
 
 router.get('/', (req, res) => {
     return res.send({message: "Você está na home"});
@@ -20,4 +21,11 @@ router.get('/products', async (req, res) => {
     res.json(products);
 });
 
+//teste
+router.get('/users/:id', getUserById);
+
+router.post('/payment', purchaseController);
+
+  
 export default router;
+
