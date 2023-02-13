@@ -1,7 +1,8 @@
 import express from 'express';
 import { ProductsController } from './controllers/ProductsController';
 import { UsersController, getUserById } from './controllers/UsersController';
-import { purchaseController } from './controllers/PurchaseController';
+import { calculateAmountToPay } from './controllers/PaymentController';
+//import { purchaseController } from './controllers/PurchaseController';
 
 const router = express.Router();
 const userController = new UsersController();
@@ -22,10 +23,11 @@ router.get('/products', async (req, res) => {
 });
 
 //teste
-router.get('/users/:id', getUserById);
+//router.get('/users/:id', getUserById);
 
-router.post('/payment', purchaseController);
+//router.post('/payment', purchaseController);
 
+router.get('/users/:userId/products/:productIds', calculateAmountToPay);
   
 export default router;
 
